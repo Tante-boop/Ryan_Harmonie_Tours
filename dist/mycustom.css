@@ -1,0 +1,71 @@
+.image-container {
+  position: relative;
+  /* Container must be relative to position the overlay absolutely */
+  overflow: hidden;
+  /* Ensures overlay stays within the image boundaries */
+}
+
+.image-container .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black background */
+  overflow: hidden;
+  height: 0;
+  /* Initially hide the overlay */
+  transition: .5s ease;
+  /* Smooth transition for the height change */
+}
+
+.image-container:hover .overlay {
+  height: 100%;
+  /* Expand overlay to full height on hover */
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Centers the text perfectly */
+  text-align: center;
+}
+
+.my-card-hover-zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition */
+  box-shadow: 0 0 300px rgba(0, 0, 0, 0.1);
+  /* Subtle initial shadow */
+  transform: translateY(-10px);
+}
+
+.my-card-hover-zoom:hover {
+  transform: scale(1.05);
+  /* Scales the card to 105% of its size */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Darker shadow on hover */
+}
+
+img:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+img:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.carousel-item img {
+  object-fit: cover;
+}

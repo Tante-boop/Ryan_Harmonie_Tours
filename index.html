@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonie Tours</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="dist/mycustom.css">
+    <script src="dist/js/bootstrap.js"></script>
+    <link href="https://unpkg.com" rel="stylesheet">
+    <script>
+        AOS.init();
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+        <!-- section 1 -->
+        <section class="row g-0">
+            <div class="col-md-12">
+                <!-- navbar-expand-md will expand on large devices and collapse on small devices -->
+                <nav class="navbar navbar-expand-md p-2 text-dark"
+                    style="background-color: darkorange; font-family: Arial, Helvetica, sans-serif; font-size: larger; font-variant: small-caps;">
+                    <div class="container-fluid">
+                        <!-- navbar-brand - places the logo or the name of the website -->
+                        <a href="" class="navbar-brand"><b>Harmonie Tours</b></a>&nbsp;&nbsp;
+                        <!-- navbar-toggler this only shows/visible when the navbar is collapsed -->
+                        <!-- data-bs-toggle="collapse" shows the button will hide/show something -->
+                        <!-- data-bs-target="#id" points to which element should expand/collapse -->
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
+                            <!-- navbar-toggler-icon this is just to place the hamburger icon -->
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- collapse hides content on small device -->
+                        <!-- navbar-collapse aligns the navbar items -->
+                        <!-- id connects to the button so that when clicked it can toggle from expanded/collapse and viceversa -->
+                        <div class="collapse navbar-collapse" id="navbarcollapse">
+                            <!-- navbar-nav ensure correct spacing and alignment -->
+                            <div class="navbar-nav">
+                                <!-- nav-link styling of individual link and active shows the active link in that page -->
+                                <a href="index.html" class="nav-link active">Home</a>&nbsp;
+                                <a href="taxibk.html" class="nav-link">Taxi Services</a>&nbsp;
+                                <a href="tourismbk.html" class="nav-link">Tourism Services</a>&nbsp;
+                                <a href="contact.html" class="nav-link">Contact Us</a>&nbsp;
+                                <button style="border-radius: 10px; border-width: 0px;" class="bg-danger"><a
+                                        href="hire.html" class="nav-link text-center text-light">Get
+                                        Hired</a></button>&nbsp;
+                            </div>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- end of section 1 -->
+
+        <!-- section 2 -->
+        <section class="row g-0">
+            <div class="col-12">
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active position-relative">
+                            <img src="images/s1.jpg" class="w-100" height="700px">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column
+                                    justify-content-center align-items-center text-white"
+                                style="background: rgba(0,0,0,0.4);">
+                                <h1>Harmonie Tours</h1>
+                                <p>Want A Trip?</p>
+                                <a href="tourismbk.html" class="btn btn-success">Book Now</a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carousel-item position-relative">
+                            <img src="images/s2.jpg" class="w-100" height="700px">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column
+                                    justify-content-center align-items-center text-white"
+                                style="background: rgba(0,0,0,0.4);">
+                                <h1>Fast And Reliable</h1>
+                                <p>24/7 Services</p>
+                                <a href="tourismbk.html" class="btn btn-success">Book Now</a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="carousel-item position-relative">
+                            <img src="images/s3.jpg" class="w-100" height="700px">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column
+                                    justify-content-center align-items-center text-white"
+                                style="background: rgba(0,0,0,0.4);">
+                                <h1>Explore Kenya with style</h1>
+                                <p>Click Below😃</p>
+                                <a href="tourismbk.html" class="btn btn-success">Book Now</a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="carousel-item position-relative">
+                            <img src="images/s4.jpg" class="w-100" height="700px">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column
+                                    justify-content-center align-items-center text-white"
+                                style="background: rgba(0,0,0,0.4);">
+                                <h1>Dont Miss Out On The Fun😎</h1>
+                                <p>I know you want to click it😏</p>
+                                <a href="tourismbk.html" class="btn btn-success">Book Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="#carousel" data-bs-slide="prev" class="carousel-control-prev">
+                        <span class="carousel-control-prev-icon bg-dark p-3 rounded-circle"></span>
+                    </a>
+                    <a href="#carousel" data-bs-slide="next" class="carousel-control-next">
+                        <span class="carousel-control-next-icon bg-dark p-3 rounded-circle"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- end of section 2 -->
+        <br>
+        <hr>
+
+
+        <!-- section 3 -->
+
+        <section id="services" class="container py-5 text-center">
+            <h2 class="fw-bold mb-4">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card my-card-hover-zoom booking-card p-4">🦁 <h4>Safari Tours</h4>
+                        <p>Premium wildlife experiences.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-card-hover-zoom booking-card p-4">🚕 <h4>Taxi Services</h4>
+                        <p>Airport & city transport.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-card-hover-zoom booking-card p-4">🏨 <h4>Hotel Booking</h4>
+                        <p>Best lodge & hotel deals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of section -->
+
+        <!-- section 4 -->
+        <h4 class="text-center display-6 p-3 text-dark"
+            style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; border-radius: 10px; text-decoration: overline;">
+            Your
+            Quality Safari And Taxi Experience Begins With Us</h4>
+        <section class="row">
+            <div class="col-md-4 text-center mb-4 image-container">
+                <img src="images/1.jpg" alt="Elephant drinking milk" height="400px">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        An Elephant taking milk at Elephant Sanctuary.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4 text-center mb-4 image-container">
+                <img src="images/3.jpg" alt="Flamingos" height="400px">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        Flamingos at Lake Nakuru.
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4 text-center mb-4 image-container">
+                <img src="images/5.jpg" alt="Elephants" height="400px">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        Herd of Elephants at Amboseli
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- end of section 4 -->
+        <hr>
+        <!-- section 5 -->
+        <section class="py-5 bg-dark text-white text-center">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-3" data-aos="fade-up">
+                        <h2 class="display-4 fw-bold">12k+</h2>
+                        <p class="text-orange">Happy Travelers</p>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="display-4 fw-bold">45+</h2>
+                        <p class="text-orange">Safari Tracks</p>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                        <h2 class="display-4 fw-bold">24/7</h2>
+                        <p class="text-orange">Taxi Support</p>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                        <h2 class="display-4 fw-bold">150+</h2>
+                        <p class="text-orange">Luxury Jeeps</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of section -->
+        <br>
+        <hr>
+        <!-- section 6 -->
+        <section id="taxi" class="text-light p-5" style="background:url(images/taxi3.jpg) center/cover no-repeat;">
+            <div class="container text-center">
+                <h2>Taxi Services</h2>
+                <p>Fast • Safe • Reliable • Anytime</p>
+                <a href="taxibk.html" class="btn btn-success">Order Taxi</a>
+            </div>
+        </section>
+
+        <!-- end of section -->
+
+        <br>
+
+        <!-- section 7 -->
+        <section class="row align-items-center p-4 bg-light shadow-lg bg-body rounded" style="border-radius: 10px;">
+            <div class="col-md-4">
+                <img src="images/n.jpg" alt="Zebras" class="w-100" height="500px">
+            </div>
+            <div class="col-md-8 p-4">
+                <p class="lead">
+                    Discover Kenya in comfort and style with Harmonie Tours.
+                    From breathtaking wildlife safaris to reliable city and airport transfers,
+                    we are committed to delivering safe, seamless, and unforgettable travel experiences.
+                </p>
+            </div>
+        </section>
+        <!-- end of section 6 -->
+
+        <!-- section 8 -->
+        <section class="container py-5 text-center">
+            <h2 class="fw-bold mb-4">What Our Clients Say</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card my-card-hover-zoom p-4">⭐️⭐️⭐️⭐️⭐️<p>"Amazing safari experience!"</p><strong>- Sarah</strong>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-card-hover-zoom p-4">⭐️⭐️⭐️⭐️⭐️<p>"Best taxi service in Nairobi."</p><strong>- James</strong>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-card-hover-zoom p-4">⭐️⭐️⭐️⭐️⭐️<p>"Professional and reliable."</p><strong>- Amina</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        </section>
+
+        <!-- section footer -->
+        <section class="row text-light p-5 mt-4" style="background-color: darkorange;">
+            <div class="col-md-3 mb-3 p-3">
+                <h4 class="text-center">About Us</h4>
+                <p>Harmonie Tours is a prestige
+                    tourism company that focuses on excellent delivery of our services to our customers.
+                </p>
+            </div>
+
+            <div class="col-md-3 text-center p-3">
+                <h4>Stay Connected</h4>
+                <a href="https://www.facebook.com"><img src="images/fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com"><img src="images/in.png" alt="Instagram"></a>
+                <a href="https://www.x.com"><img src="images/x.png" alt="X"></a>
+
+                <p class="mt-3">
+                    Contact Us through the various platforms or send it directly over our Contact Us Page. We love to
+                    hear opinions from our customers
+                </p>
+
+            </div>
+
+            <div class="col-md-3 text-center p-3">
+                <h4>Links</h4>
+                <a href="https://www.kws.go.ke/"> <img src="images/kws.png" alt=""></a>
+                <a href="https://www.tourism.go.ke/wildlife/"><img src="images/Mns.png" alt="" width="300px"></a>
+                <a href="https://ke.chm-cbd.net/biodiversity"><img src="images/bio.jpeg" alt="" width="100px"></a>
+
+            </div>
+
+        </section>
+
+        <!-- section copyright -->
+        <section class="row text-center bg-dark text-light p-2">
+            <h4>Developed by Harmonie Tours. &copy; 2026. All Rights Reserved.</h4>
+
+
+        </section>
+    </div>
+
+</body>
+
+</html>
